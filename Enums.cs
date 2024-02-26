@@ -1,11 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CommEX
+﻿namespace CommEX
 {
+    public enum OrderType
+    {
+        LIMIT,
+        MARKET,
+        STOP_LOSS,
+        STOP_LOSS_LIMIT,
+        TAKE_PROFIT,
+        TAKE_PROFIT_LIMIT
+    }
+
+
+
+    public enum OrderSide
+    {
+        BUY,
+        SELL
+    }
+
+    public enum TimeInForce
+    {        
+        GTC,
+        IOC,
+        FOK,
+        GTX
+    }
+
     public enum Interval
     {
         _1m,
@@ -23,5 +43,15 @@ namespace CommEX
         _3d,
         _1w,
         _1M
+    }
+    
+    public enum AccountType
+    {
+        MAIN_FUTURE,
+        FUTURE_MAIN,
+        MAIN_FUNDING,
+        FUNDING_MAIN,
+        FUNDING_FUTURE,
+        FUTURE_FUNDING
     }
 }

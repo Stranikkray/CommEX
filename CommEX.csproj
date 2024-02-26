@@ -5,6 +5,40 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.1.1</Version>
+    <AssemblyVersion>1.1.1</AssemblyVersion>
+    <FileVersion>1.1.1</FileVersion>
+    <Title> CommEX </Title>
+    <Authors> Stranikkray</Authors>
+    <Company> Stranikkray</Company>
+    <Copyright></Copyright>
+    <Description>The CommEX Exchange API library in C# facilitates seamless interaction with the trading platform for developers. It enables fetching market data, managing portfolios, and executing trading operations. Documentation for CommEX: https://www.commex.com/api-docs/en</Description>
+    <PackageProjectUrl></PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Stranikkray/CommEX</RepositoryUrl>
+    <PackageTags>SpotClientCommEX, FuturesClientCommEX</PackageTags>
+    <PackageReleaseNotes> v1.1
+Add in Futures:
+Old Trades Lookup (MARKET_DATA)
+Index Price Kline/Candlestick Data
+Mark Price Kline/Candlestick Data
+Mark Price
+Get Funding Rate History
+Open Interest</PackageReleaseNotes>
+    <Product>CommEX</Product>
+    <PackageId> Stranikkray.CommEX </PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
